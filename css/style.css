@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --vinho: #31081f;
+  --rosa: #f76ad3;
+  --banco: #ffff;
+}
+
+/* fonts */
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: economica;
+  src: url(../fonts/Economica-Regular.ttf);
+}
+
+@font-face {
+  font-family: economica-bold;
+  src: url(../fonts/Economica-Bold.ttf);
+}
+
+
+/* .video-principal {
+    height: 700px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+}
+ */
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--vinho);
+}
+
+header .container {
+  display: flex;
+  position: relative;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: end;
+  margin-right: 60px;
+  margin-top: 45px;
+  color: #ffff;
+}
+.logo{
+  width: 50px;
+  margin-right: 10px;
+}
+
+#video-banner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--branco);
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+header nav a:hover {
+  color: var(--vermelho);
+}
+
+.brilho-1 {
+  position: relative;
+  margin-top: -80px;
+  bottom: 0;
+  width: 25%;
+}
+
+.text {
+  position: relative;
+  bottom: 0;
+  align-items: center;
+  padding-left: 40px;
+  margin-top: -85px;
+  text-align: center;
+  color: #ffff;
+
+  /* border-right: 2px solid; */
+}
+
+.text h2 {
+  /* border-right: 2px solid; */
+  font-family: poppins;
+  letter-spacing: 0.2rem;
+  padding-left: 300px;
+  width: 40ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digitar 2s steps(40), ponteiro 0.5s infinite step-end alternate;
+
+}
+
+@keyframes digitar {
+  from {
+    width: 0ch;
+  }
+}
+
+@keyframes ponteiro {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.saindo {
+  position: relative;
+  margin-top: 260px;
+}
+
+/* #triangulo {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-right: 1250px solid var(--vinho);
+  border-bottom: 40px solid transparent;
+  margin-left: -2rem;
+} */
+
+.sobre {
+  display: flex;
+  position: relative;
+}
+
+.text-2 {
+  color: var(--banco);
+  font-family: economica;
+}
+
+.circulo-luz {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(rgba(207, 165, 116, 0.097), rgba(207, 165, 116, 0.097) 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 -50px #ffff,
+    0 0 100px #ffff,
+    0 0 50px #ffff,
+    0 0 75px #ffff;
+  margin-top: -87rem;
+  margin-left: -20rem;
+}
